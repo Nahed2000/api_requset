@@ -60,13 +60,16 @@ class _ImagesScreenState extends State<ImagesScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)
                     ),
-                    child: CachedNetworkImage(
-
-                      fit: BoxFit.cover,
-                      imageUrl: ApiSettings.imageApiUrl + controller.images[index].image,
-                      progressIndicatorBuilder: (context, url, downloadProgress) =>
-                          CircularProgressIndicator(value: downloadProgress.progress),
-                      errorWidget: (context, url, error) => const Icon(Icons.error),
+                    child: Column(
+                      children: [
+                        CachedNetworkImage(
+                          fit: BoxFit.cover,
+                          imageUrl: ApiSettings.imageApiUrl + controller.images[index].image,
+                          progressIndicatorBuilder: (context, url, downloadProgress) =>
+                              CircularProgressIndicator(value: downloadProgress.progress),
+                          errorWidget: (context, url, error) => const Icon(Icons.error),
+                        ),
+                      ],
                     ),
                   );
                 },
