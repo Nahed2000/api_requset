@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/user_screen',
+      initialRoute: '/lunch_screen',
       debugShowCheckedModeBanner: false,
       routes: {
         '/lunch_screen': (context) => const LunchScreen(),
@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
         '/register_screen': (context) => const RegisterScreen(),
         '/forget_password_Screen': (context) => const ForgetPasswordScreen(),
         '/images_screen': (context) => const ImagesScreen(),
-        '/update_images_screen': (context) => const UploadImageScreen(),
+        '/upload_images_screen': (context) => const UploadImageScreen(),
       },
     );
   }

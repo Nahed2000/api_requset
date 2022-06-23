@@ -28,7 +28,7 @@ class _ImagesScreenState extends State<ImagesScreen> with Helper{
           actions: [
             IconButton(
               onPressed: () =>
-                  Navigator.pushNamed(context, '/update_images_screen'),
+                  Navigator.pushNamed(context, '/upload_images_screen'),
               icon: const Icon(Icons.camera_alt_outlined),
             )
           ],

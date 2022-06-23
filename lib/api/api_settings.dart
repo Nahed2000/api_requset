@@ -9,5 +9,4 @@ class ApiSettings {
   static const String forGetPassword = _baseApiUrl + 'students/auth/forget-password';
   static const String resetPassword = _baseApiUrl + 'students/auth/reset-password';
   static const String images = _baseApiUrl + 'student/auth/images/{id}';
-
 }

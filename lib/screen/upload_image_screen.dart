@@ -67,7 +67,7 @@ class _UploadImageScreenState extends State<UploadImageScreen> with Helper {
                 : Image.file(File(pikedImage!.path)),
           ),
           ElevatedButton.icon(
-            onPressed: () {},
+            onPressed: () async=>await performUploadImage(),
             icon: const Icon(Icons.cloud_upload_outlined),
             label: Text(
               'Upload Image',

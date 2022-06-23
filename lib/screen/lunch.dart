@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class LunchScreen extends StatefulWidget {
   const LunchScreen({Key? key}) : super(key: key);
-
   @override
   State<LunchScreen> createState() => _LunchScreenState();
 }
